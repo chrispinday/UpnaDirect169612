@@ -8,7 +8,6 @@ package upnadirect;
  *
  * @author alumno
  */
-public abstract class Usuario {
-//    private string nombreUsuario;
-//    private String contraseña;
+public class VistaConsola implements IVista{
+    
 }

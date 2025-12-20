@@ -11,7 +11,7 @@ import java.time.LocalDate;
  *
  * @author alumno
  */
-class Cliente extends Usuario{
+class Cliente{
     private int anioNacimiento;
     private double salario;
     
