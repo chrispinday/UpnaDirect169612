@@ -11,7 +11,7 @@ package upnadirect;
 public class Mafro extends Aseguradora {
 
     public Mafro() {
-        super("Mafro");
+        super("MAFRO");
     }
 
     @Override
@@ -34,9 +34,9 @@ public class Mafro extends Aseguradora {
     protected int calcularComision(double importe) {
         int comision;
         if (importe <= 1000) {
-            comision =  (int)Math.floor(0.1 * importe);
+            comision =  (int)Math.floor(0.01 * importe);
         }else {
-            comision =  (int)Math.floor(0.3 * importe);
+            comision =  (int)Math.floor(0.03 * importe);
         }
         return comision;
     }

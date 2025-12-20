@@ -11,7 +11,7 @@ package upnadirect;
 public class LineaIndirecta extends Aseguradora{
 
     public LineaIndirecta() {
-        super("Linea Indirecta");
+        super("LINEA INDIRECTA");
     }
 
     @Override
@@ -37,9 +37,9 @@ public class LineaIndirecta extends Aseguradora{
     protected int calcularComision(double importe) {
         int comision;
         if (importe <= 1000) {
-            comision =  (int)Math.floor(0.1 * importe);
+            comision =  (int)Math.floor(0.01 * importe);
         }else {
-            comision =  (int)Math.floor(0.4 * importe);
+            comision =  (int)Math.floor(0.04 * importe);
         }
         return comision;
     }

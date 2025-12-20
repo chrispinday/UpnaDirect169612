@@ -51,7 +51,7 @@ public class Presentador {
         Oferta oferta = servicioOfertas.obtenerMejorOferta(this.cliente, this.bien);
         this.vista.imprimirMensaje("La mejor oferta para el cliente " + "(edad: " + cliente.getEdad() + ", salario: " 
                 + cliente.getSalario() + " ) y bien (tipo: " + bien.getTipo() +  ", valor: " + bien.getValor() + ") es...");
-        this.vista.imprimirMensaje(oferta.getNombreAsegurador() + " | " + oferta.getImporte() + " | " + oferta.getComision());
+        this.vista.imprimirMensaje(oferta.getNombreAsegurador() + " | " + (int)oferta.getImporte() + " | " + oferta.getComision());
         resetClienteYBien();
     }
 

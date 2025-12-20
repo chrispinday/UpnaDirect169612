@@ -11,7 +11,7 @@ package upnadirect;
 public class Adasles extends Aseguradora{
 
     public Adasles() {
-        super("Adasles");
+        super("ADASLES");
     }
 
     @Override
@@ -30,9 +30,9 @@ public class Adasles extends Aseguradora{
     protected int calcularComision(double importe) {
         int comision;
         if (importe <= 1000) {
-            comision =  (int)Math.floor(0.1 * importe);
+            comision =  (int)Math.floor(0.01 * importe);
         }else {
-            comision =  (int)Math.floor(0.5 * importe);
+            comision =  (int)Math.floor(0.05 * importe);
         }
         return comision;
     }
