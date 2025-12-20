@@ -46,6 +46,7 @@ public class Presentador {
     public void calcularMejorOferta() {
         if (this.cliente == null || this.bien == null) {
             this.vista.imprimirError("Debes registrar primero el usuario y el bien");
+            return;
         }
         Oferta oferta = servicioOfertas.obtenerMejorOferta(this.cliente, this.bien);
         this.vista.imprimirMensaje("La mejor oferta para el cliente " + "(edad: " + cliente.getEdad() + ", salario: " 
