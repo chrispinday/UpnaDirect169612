@@ -19,4 +19,11 @@ public class Oferta {
         this.comision = comision;
     }
     
+    public double getImporte() {
+        return this.importe;
+    }
+    
+    public int getComision() {
+        return this.comision;
+    }
 }

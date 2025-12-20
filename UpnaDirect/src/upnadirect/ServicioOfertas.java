@@ -20,12 +20,29 @@ public class ServicioOfertas {
     }
     
     public Oferta obtenerMejorOferta(Cliente cliente, Bien bien) {
-        Oferta ofertaMafro = mafro.obtenerOferta(cliente, bien);
-        Oferta ofertaLineaInd = lineaIndirecta.obtenerOferta(cliente, bien);
-        Oferta ofertaAdasles = adasles.obtenerOferta(cliente, bien);
+        Oferta ofMafro = mafro.obtenerOferta(cliente, bien);
+        Oferta ofLineaInd = lineaIndirecta.obtenerOferta(cliente, bien);
+        Oferta ofAdasles = adasles.obtenerOferta(cliente, bien);
         
+        Oferta menor = ofMafro;
+        if (esMenor(ofLineaInd, menor)) {
+            menor = ofLineaInd;
+        }
+        if (esMenor(ofAdasles, menor)) {
+            menor = ofAdasles;
+        }
         
-        
-        return null;
+        return menor;
+    }
+    
+    private static boolean esMenor(Oferta a, Oferta b) {
+        if (a.getImporte() < b.getImporte()) {
+            return true;
+        }
+        if (a.getImporte() == b.getImporte() &&
+            a.getComision() > b.getComision()) {
+            return true;
+        }
+        return false;
     }
 }
