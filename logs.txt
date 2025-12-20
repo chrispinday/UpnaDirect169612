@@ -1,0 +1,37 @@
+alumno@XUBUNTU24-0026:~/Escritorio/UpnaDirect169612$ git log
+commit e94a91def1515111c1e232a6f498200a5a6ba0a0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Chris Pinday <chrispinday@gmail.com>
+Date:   Sat Dec 20 12:25:33 2025 +0100
+
+    mvp SOL ERRORES
+
+commit 2a0253fb5691c497dc90edb8a9f780b80cb0926c
+Author: Chris Pinday <chrispinday@gmail.com>
+Date:   Sat Dec 20 12:19:51 2025 +0100
+
+    mvp completado
+
+commit dad18aaade756f74d787ebb63e832aa09803f974
+Author: Chris Pinday <chrispinday@gmail.com>
+Date:   Sat Dec 20 02:03:53 2025 +0100
+
+    mvp primera version
+
+commit b11b985a5672cce54bb3b7ad1db51f53a4c91dc8
+Author: Chris Pinday <chrispinday@gmail.com>
+Date:   Sat Dec 20 01:16:06 2025 +0100
+
+    logica obtenermejoroferta
+
+commit 82d66f855607a805ef657445b1a2cd48c4746643
+Author: Chris Pinday <chrispinday@gmail.com>
+Date:   Sat Dec 20 00:54:06 2025 +0100
+
+    estructura del proyecto e implementaciones individuales
+
+commit 838382851eb10c29a5f823c0ef284aa15dc137ed
+Author: Christhoper Pinday Delgado <140918731+chrispinday@users.noreply.github.com>
+Date:   Sat Dec 20 00:48:14 2025 +0100
+
+    Initial commit
+(END)
