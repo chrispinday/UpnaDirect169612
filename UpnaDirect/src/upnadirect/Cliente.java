@@ -30,7 +30,7 @@ class Cliente{
     }
     
     private void validarAnioNacimiento(int anio) {
-        if (anio <= 1900 && anio > LocalDate.now().getYear()) {
+        if (anio <= 1900 || anio > LocalDate.now().getYear()) {
             throw new IllegalArgumentException(
                     "El año de nacimiento debe estar dentro del rango <1900 - año actual]"
             );

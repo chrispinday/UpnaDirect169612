@@ -13,4 +13,12 @@ public interface IVista {
     double consultarSalario();
     TipoBien consultarTipoBien();
     double consultarValor();
+
+    public void imprimirMensaje(String mensaje);
+
+    public void mostrarMenu();
+
+    public int obtenerOpcion();
+
+    public void imprimirError(String mensaje);
 }

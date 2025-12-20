@@ -19,6 +19,10 @@ public class Oferta {
         this.comision = comision;
     }
     
+    public String getNombreAsegurador() {
+        return this.nombreAseguradora;
+    }
+    
     public double getImporte() {
         return this.importe;
     }
